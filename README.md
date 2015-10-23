@@ -14,6 +14,7 @@ chat multiple by css ,js
 API:
 	
 方法说明:
+
 addSendMessage(message,id) - 添加一条发送信息($.chat("addSendMessage","test") or $.chat("addSendMessage","test","001"))
 
 addReceiveMessage(message,id) - 添加一条接收信息($.chat("addReceiveMessage","test") or $.chat("addReceiveMessage","test","001"))
@@ -28,6 +29,7 @@ addChat(chatArray[i]对象) -添加一个对话
 
 
  参数说明:
+ 
 {String} width - 宽度(最小300)
 
 {String} height - 高度(最小400)
@@ -62,6 +64,8 @@ addChat(chatArray[i]对象) -添加一个对话
 
 
  参数结构:
+ 
+ 	```javascript
 	var defaults = {
 	
 		title:"车主提问",

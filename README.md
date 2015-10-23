@@ -1,14 +1,14 @@
 # chat_multiple
 chat multiple by css ,js
 
-客服聊天框（单对话框）  --> https://github.com/tenbamboo/chat_simple
+客服聊天框（单对话框）  --> https:github.com/tenbamboo/chat_simple
 
-客服聊天框（多选对话框）--> https://github.com/tenbamboo/chat_multiple
+客服聊天框（多选对话框）--> https:github.com/tenbamboo/chat_multiple
 
 使用第三方插件列表:
-1.umeditor -->https://github.com/fex-team/umeditor
+1.umeditor -->https:github.com/fex-team/umeditor
 
-2.mCustomScrollbar  -->https://github.com/astula/mCustomScrollbar
+2.mCustomScrollbar  -->https:github.com/astula/mCustomScrollbar
 
 
 API:
@@ -65,38 +65,52 @@ addChat(chatArray[i]对象) -添加一个对话
 
  参数结构:
  
- 	```javascript
+ 
 	var defaults = {
 	
 		title:"车主提问",
-		
-		recipientImg:"./images/face1.jpg",
-		
-		senderImg:"./images/face2.jpg",
 		
 		width:600,
 		
 		height:500,
 		
-		beforeSend:undefined,
+		chatArray:[
 		
-		afterSend:undefined,
+			 {
+			 	chatId:"0000000",
+			 	
+			 	title:"test1",
+			 	
+			 	recipientImg:"./images/face1.jpg",
+			 	
+			 	senderImg:"./images/face2.jpg",
+			 	
+			 	beforeSend:undefined,
+			 	
+			 	afterSend:undefined,
+			 	
+			 	loadHistory:{
+			 	
+			 		enable:false,
+			 		
+			 		url:"",
+			 		
+			 		type:"GET",
+			 		
+			 		data:{},
+			 		
+			 		success:undefined,
+			 		
+			 		error:undefined,
+			 		
+			 	}
+			 	
+
+			 },
+			 
+
+		],
 		
-		loadHistory:{
-		
-			enable:false,
-			
-			url:"",
-			
-			type:"GET",
-			
-			data:{},
-			
-			success:undefined,
-			
-			error:undefined,
-			
-		}
 		
 	};
 

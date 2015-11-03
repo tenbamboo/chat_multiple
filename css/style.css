@@ -3,7 +3,7 @@ p {
 	margin: 0;
 }
 .chat {
-	position: absolute;
+	position: fixed;
 	right: 10px;
 	width: 0;
 	height: 0;
@@ -80,10 +80,14 @@ p {
 .chat .chat-content .chat-item .chat-item-content {
 	line-height: 45px;
 	background-color: #eee;
-	display: table-cell;
+	display: inline-block;
 	position: relative;
 	padding: 0 10px;
 	font-size: 15px;
+	min-height: 40px;
+	word-wrap: break-word;
+    max-width: 66%;
+    line-height: 20px;
 }
 .chat .chat-content .chat-item .chat-item-content img {
 	max-width: 100%;
@@ -106,7 +110,7 @@ p {
 .chat .chat-content  .left b.jiao-wai {
 	display: block;
 	position: absolute;
-	top: 19px;
+	top: 17px;
 	left: 51px;
 	width: 0;
 	height: 0;
@@ -128,7 +132,7 @@ p {
 .chat .chat-content  .right b.jiao-wai {
 	display: block;
 	position: absolute;
-	top: 18px;
+	top: 16px;
 	right: 51px;
 	width: 0;
 	height: 0;
